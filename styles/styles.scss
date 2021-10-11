@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.active {
+  color: #40aa54;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px;
+  max-width: 1070px;
+  width: 100%;
+  margin: auto;
+
+  .menu {
+    display: flex;
+    li a {
+      padding: 3px 10px;
+      margin: 0 15px;
+      color: #3b3b3b;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+
+
+      &:hover{
+        color: #40aa54;
+      }
+    }
+  }
+  .logo {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #202020;
+
+    span {
+      color: #40aa54;
+    }
+  }
+
+  .right-nav{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 25px;
+
+    a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: #202020;
+      position: relative;
+
+      
+
+      span {
+        position: absolute;
+        top: -7px;
+        right: -7px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: #ffffff;
+        font-size: 0.6rem;
+        font-weight: 500;
+      }
+    }
+
+    .like {
+      background-color: #fff0ee;
+      color: #ff6c57;
+      span {
+        background-color: #ff6c57;
+      }
+    }
+
+    .cart {
+      background-color: #ecf7ee;
+      color: #4eb060;
+      span {
+        background-color: #4eb060;
+      }
+    }
+  }
+}
+
