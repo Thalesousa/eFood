@@ -239,4 +239,98 @@ a {
 #search-banner .search-banner-text form button:hover {
   background: #5ccf71;
 }
+
+#category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+#category .category-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#category .category-heading h2 {
+  font-size: 1.56rem;
+  font-weight: 700;
+  color: #202020;
+}
+
+#category .category-heading span {
+  color: #a7a7a7;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+#category .category-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+#category .category-container .category-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fafafa;
+  border-radius: 10px;
+  min-height: 130px;
+  width: 120px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+#category .category-container .category-box img {
+  height: 35px;
+  width: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transition: scale ease-in 0.2s;
+  transition: scale ease-in 0.2s;
+}
+
+#category .category-container .category-box img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#category .category-container .category-box span {
+  color: #393939;
+  font-size: 0.8rem;
+  margin-top: 20px;
+  letter-spacing: 0.3px;
+  font-weight: 600;
+}
 /*# sourceMappingURL=styles.css.map */
