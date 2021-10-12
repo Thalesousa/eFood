@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 
 ul {
@@ -12,10 +13,6 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-.active {
-  color: #40aa54;
 }
 
 .navigation {
@@ -125,5 +122,121 @@ a {
 
 .navigation .right-nav .cart span {
   background-color: #4eb060;
+}
+
+#search-banner {
+  position: relative;
+  max-width: 1250px;
+  height: 500px;
+  border-radius: 30px;
+  margin: 10px auto;
+  overflow: hidden;
+  background: url(../assets/images/bg.png) no-repeat #ecf7ee;
+  background-size: 1000px;
+  background-position: bottom right;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#search-banner .bg-1 {
+  position: absolute;
+  left: -50px;
+  top: -150px;
+  width: 300px;
+  height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#search-banner .bg-2 {
+  position: absolute;
+  left: 60%;
+  -webkit-transform: translateX(60%);
+          transform: translateX(60%);
+  top: -75px;
+  width: 150px;
+  height: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#search-banner .search-banner-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+  margin-left: 70px;
+  position: relative;
+}
+
+#search-banner .search-banner-text h1 {
+  font-size: 3rem;
+  line-height: 55px;
+  color: #202020;
+  font-weight: bold;
+}
+
+#search-banner .search-banner-text strong {
+  color: #4eb060;
+  font-size: 1.4rem;
+  margin-top: 4px;
+}
+
+#search-banner .search-banner-text form {
+  background: #fff;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25px;
+  padding: 0 5px 0 20px;
+  border-radius: 30px;
+}
+
+#search-banner .search-banner-text form i {
+  font-size: 1.3rem;
+  color: #3b3b3b;
+  margin: 0 10px;
+}
+
+#search-banner .search-banner-text form input {
+  height: 40px;
+  border: none;
+  width: 100%;
+  padding: 0 10px;
+  outline: none;
+}
+
+#search-banner .search-banner-text form button {
+  width: 220px;
+  height: 40px;
+  border-radius: 30px;
+  background: #4eb060;
+  border: none;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all ease-in 0.4s;
+  transition: all ease-in 0.4s;
+}
+
+#search-banner .search-banner-text form button:hover {
+  background: #5ccf71;
 }
 /*# sourceMappingURL=styles.css.map */

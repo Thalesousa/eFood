@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 
 ul {
@@ -11,10 +12,6 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-.active {
-  color: #40aa54;
 }
 
 .navigation {
@@ -103,3 +100,100 @@ a {
   }
 }
 
+#search-banner {
+  position: relative;
+  max-width: 1250px;
+  height: 500px;
+  border-radius: 30px;
+  margin: 10px auto;
+  overflow: hidden;
+  background: url(../assets/images/bg.png) no-repeat #ecf7ee;
+
+  background-size: 1000px;
+  background-position: bottom right;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+
+  .bg-1 {
+    position: absolute;
+    left: -50px;
+    top: -150px;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .bg-2 {
+    position: absolute;
+    left: 60%;
+    transform: translateX(60%);
+    top: -75px;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .search-banner-text {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-left: 70px;
+    position: relative;
+
+    h1 {
+      font-size: 3rem;
+      line-height: 55px;
+      color: #202020;
+      font-weight: bold;
+    }
+
+    strong {
+      color: #4eb060;
+      font-size: 1.4rem;
+      margin-top: 4px;
+    }
+
+    form {
+      background: #fff;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      margin-top: 25px;
+      padding: 0 5px 0 20px;
+      border-radius: 30px;
+
+      i {
+        font-size: 1.3rem;
+        color: #3b3b3b;
+        margin: 0 10px;
+      }
+  
+      input {
+        height: 40px;
+        border: none;
+        width: 100%;
+        padding: 0 10px;
+        outline: none;
+      }
+  
+      button {
+        width: 220px;
+        height: 40px;
+        border-radius: 30px;
+        background: #4eb060;
+        border: none;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+        transition: all ease-in 0.4s;
+  
+        &:hover {
+          background: #5ccf71;
+        }
+      }
+    }
+  }
+}
