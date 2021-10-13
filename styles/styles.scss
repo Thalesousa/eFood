@@ -463,3 +463,64 @@ a {
     }
   }
 }
+
+#download-app {
+  max-width: 1150px;
+  width: 100%;
+  background-color: #ecf7ee;
+  height: 400px;
+  margin: 225px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .app-img {
+    width: 275px;
+    height: 550px;
+    background-color: #fff;
+    border: 4px solid #393939;
+    border-radius: 20px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+  }
+
+  .download-app-text {
+    max-width: 400px;
+
+    strong {
+      color: #393939;
+      font-size: 1.56rem;
+      font-weight: bold;
+    }
+    p {
+      color: #3b3b3b;
+      margin: 15px 8px;
+    }
+
+    .donwload-btns {
+      display: flex;
+
+      a {
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        border-radius: 5px;
+        overflow: hidden;
+
+        img {
+          height: 100%;
+          object-fit: cover;
+          object-fit: center;
+        }
+      }
+    }
+  }
+}
