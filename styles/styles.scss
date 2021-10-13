@@ -438,3 +438,28 @@ a {
     }
   }
 }
+
+#partner {
+  margin: 100px auto;
+
+  .logo-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    img {
+      height: 55px;
+      object-fit: contain;
+      object-position: center;
+
+      filter: grayscale(1);
+      opacity: 0.3;
+      transition: all ease-in 0.3s;
+
+      &:hover {
+        filter: grayscale(0);
+        opacity: 1;
+      }
+    }
+  }
+}
