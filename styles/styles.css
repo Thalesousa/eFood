@@ -456,4 +456,107 @@ a {
   background-color: #ecf7ee;
   border: 1px solid #f3f3f3;
 }
+
+#clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6f656;
+  padding: 40px 0;
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+#clients .client-heading h3 {
+  font-size: 1.56rem;
+  color: #202020;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+#clients .client-box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 90%;
+  margin-top: 40px;
+}
+
+#clients .client-box-container .client-box {
+  background-color: #fff;
+  padding: 30px 20px;
+  border: 1px solid #f1f1f1;
+  -webkit-box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.05);
+          box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 0 30px 0 30px;
+}
+
+#clients .client-box-container .client-box .client-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#clients .client-box-container .client-box .client-profile img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+}
+
+#clients .client-box-container .client-box .client-profile .profile-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10px;
+}
+
+#clients .client-box-container .client-box .client-profile .profile-text strong {
+  color: #393939;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#clients .client-box-container .client-box .client-profile .profile-text span {
+  color: #949494;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+#clients .client-box-container .client-box .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+}
+
+#clients .client-box-container .client-box .rating i {
+  color: #fdcc0d;
+}
+
+#clients .client-box-container .client-box p {
+  color: #7c7c7c;
+}
 /*# sourceMappingURL=styles.css.map */
